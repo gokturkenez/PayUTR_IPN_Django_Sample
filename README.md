@@ -35,4 +35,12 @@ You can follow this [instructor](https://docs.djangoproject.com/en/1.11/topics/i
     python3 manage.py runserver 
 or
     
-    python3 manage.py runserver 8080(it's depends to yours server's port) 
+    python3 manage.py runserver 8080(it's depends to yours server's port) ,
+    
+# Configuring
+
+* 'SECRET_KEY' should be replaced with your merchant's secret key value. 
+You can edit this value PayUTR_IPN_Django_Sample/ipn/views.py 13. line
+
+* Endpoint URL setted defaulty to http://www.domain.com/ipn/
+You can edit this value at PayUTR_IPN_Django_Sample/PayUTR_IPN_API_DjangoSample/urls.py 20. line
